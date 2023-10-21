@@ -1,8 +1,12 @@
 package org.example.car;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
 public class MegaEngine implements Engine {
 
-    private final String name;
+    private String name;
     private final int peed = 5000;
     private String id;
 
@@ -16,7 +20,7 @@ public class MegaEngine implements Engine {
         this.id = id;
     }
 
-    public MegaEngine(String name) {
+    public MegaEngine(@Value("${megaEngine.name}") String name) {
         this.name = name;
     }
 
