@@ -12,11 +12,11 @@ public class Car {
         return engine;
     }
 
-    public void init() {
+    private void init() {
         System.out.println("Car init");
     }
 
-    public void destroy() {
+    private void destroy() {
         System.out.println("Car is destroyed");
     }
 }
