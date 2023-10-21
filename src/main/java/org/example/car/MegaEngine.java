@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 public class MegaEngine implements Engine {
 
     private String name;
-    private final int peed = 5000;
+    private final int speed = 5000;
     private String id;
 
     @Override
@@ -31,6 +31,6 @@ public class MegaEngine implements Engine {
 
     @Override
     public int getSpeed() {
-        return this.peed;
+        return this.speed;
     }
 }
