@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.car.MegaEngine;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import org.example.car.Car;
@@ -11,7 +12,7 @@ public class Main {
             Car car = context.getBean("carBean", Car.class);
             System.out.println(car.getEngine().getName());
             System.out.println(car.getEngine().getSpeed());
+            System.out.println(car.getEngine().getId());
         }
-
     }
 }

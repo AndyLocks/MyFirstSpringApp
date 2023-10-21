@@ -10,6 +10,7 @@
     <bean id="engineBean"
           class="org.example.car.MegaEngine">
         <constructor-arg value="Aboba"/>
+        <property name="id" value="228"/>
     </bean>
 
     <bean id="carBean"
