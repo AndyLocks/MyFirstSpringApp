@@ -7,9 +7,14 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="testBean"
-          class="org.example.TestBean">
-        <constructor-arg value="aboba"/>
+    <bean id="engineBean"
+          class="org.example.car.MegaEngine">
+        <constructor-arg value="Aboba"/>
+    </bean>
+
+    <bean id="carBean"
+          class="org.example.car.Car">
+        <constructor-arg ref="engineBean"/>
     </bean>
 
 </beans>
